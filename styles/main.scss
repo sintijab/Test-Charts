@@ -1,0 +1,21 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+@import '_variables', '_mixins';
+// styles can be added here
+
+body {
+	font-family: 'Web-font-fontawesome';
+	background: $white;
+
+  @include desktop {
+		background: $light-green;
+	}
+}
+
+.positive {
+	color: $light-green;
+}
+
+.negative {
+	color: $red;
+}

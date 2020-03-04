@@ -1,0 +1,77 @@
+@import '../../../styles/main';
+
+.report {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  bottom: 1rem;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: $white;
+
+  @include desktop {
+		flex-direction: row;
+    top: 1.5rem;
+    right: 3rem;
+    bottom: 1.5rem;
+    left: 3rem;
+    border: 1px solid $light-gray;
+    border-radius: 1rem;
+	}
+}
+
+.info {
+  width: 100%;
+  margin: 1rem;
+  line-height: 1.5;
+
+  @include desktop {
+		width: 20rem;
+	}
+}
+
+.info_row {
+  display: inline;
+}
+
+.report_info {
+  margin: auto;
+  height: 400px;
+  width: 30%;
+
+    @include desktop {
+      border-right: 1px solid $light-gray;
+      padding-right: 3rem;
+  	}
+}
+
+.report_nav {
+  display: flex;
+}
+
+.report_nav_item {
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0 2rem;
+  line-height: 2;
+  border: 1px solid $light-gray;
+  cursor: pointer;
+}
+
+.report_title,
+.report_subtitle {
+  margin: 1rem 0 3rem 0;
+  text-align: center;
+}
+
+.report_subtitle {
+  @include desktop {
+		text-align: left;
+	}
+}
+
+.report_nav_active {
+  background: $light-green;
+}

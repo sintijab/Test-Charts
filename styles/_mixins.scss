@@ -1,0 +1,23 @@
+@mixin mobile {
+	 @media (min-width: 576px) {
+			@content;
+	 }
+}
+
+@mixin tablet {
+	 @media (min-width: 768px) {
+			@content;
+	 }
+}
+
+@mixin desktop {
+	 @media (min-width: 992px) {
+			@content;
+	 }
+}
+
+@font-face {
+  font-family: 'Web-font-fontawesome';
+  font-weight: normal;
+  src: url("~font-awesome/fonts/fontawesome-webfont.ttf") format("ttf");
+}

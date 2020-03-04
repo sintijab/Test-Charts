@@ -1,0 +1,9 @@
+@import '../../../styles/main';
+
+.chart {
+  margin: auto;
+  max-width: 100%;
+  @include tablet {
+		overflow: visible!important;
+	}
+}
